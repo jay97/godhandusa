@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Tektur:wght@400..900&display=swap");
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+
+  --color-black: #000000;
+  --color-dark-blue: #0a0e15;
+  --color-dark-green: #001800;
+  --color-medium-blue: #1446a0;
+  --color-purple: #8a00ff;
+  --color-blue: #00b8ff;
+  --color-gray: #b3b3b3;
+  --color-white: #ffffff;
+  --color-off-white: #f1f1f1;
+  --color-off-white-5: color-mix(
+    in srgb,
+    var(--color-off-white),
+    transparent 95%
+  );
+  --color-off-white-10: color-mix(
+    in srgb,
+    var(--color-off-white),
+    transparent 90%
+  );
+  --color-off-white-25: color-mix(
+    in srgb,
+    var(--color-off-white),
+    transparent 75%
+  );
+  --color-off-white-50: color-mix(
+    in srgb,
+    var(--color-off-white),
+    transparent 50%
+  );
+  --color-gold: #f0c05a;
+  --color-orange: #bf9b30;
+  --color-red: #ff003c;
+  --color-dark-red: color-mix(
+    in srgb,
+    var(--color-red),
+    var(--color-black) 80%
+  );
+  --color-terminal-green: #00ff6a;
+  --color-terminal-green-5: color-mix(
+    in srgb,
+    var(--color-terminal-green),
+    transparent 95%
+  );
+  --color-terminal-green-10: color-mix(
+    in srgb,
+    var(--color-terminal-green),
+    transparent 90%
+  );
+  --color-terminal-green-25: color-mix(
+    in srgb,
+    var(--color-terminal-green),
+    transparent 75%
+  );
+  --color-terminal-green-50: color-mix(
+    in srgb,
+    var(--color-terminal-green),
+    transparent 50%
+  );
+  --color-dark-green-50: color-mix(
+    in srgb,
+    var(--color-dark-green),
+    transparent 50%
+  );
+  --color-orange-50: color-mix(in srgb, var(--color-orange), transparent 50%);
+  --color-dark-blue-50: color-mix(
+    in srgb,
+    var(--color-dark-blue),
+    transparent 50%
+  );
+
+  --color-black-25: color-mix(in srgb, var(--color-black), transparent 75%);
+  --color-black-50: color-mix(in srgb, var(--color-black), transparent 50%);
+  --color-black-75: color-mix(in srgb, var(--color-black), transparent 25%);
+
+  --splash-image-width: 473px;
+  --splash-image-height: 549px;
+}
+
+@media only screen and (max-width: 1100px) {
+  :root {
+    --splash-image-width: 236px;
+    --splash-image-height: 274px;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  :root {
+    --splash-image-width: 236px;
+    --splash-image-height: 274px;
+  }
+}
+
+@media only screen and (max-height: 900px) and (min-width: 600px) and (max-width: 1100px) {
+  :root {
+    --splash-image-width: 236px;
+    --splash-image-height: 274px;
+  }
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Share Tech Mono", monospace;
+}
+
+body {
+  max-height: -webkit-fill-available;
+  padding: 0;
+  margin: 0;
+}
